@@ -1,32 +1,22 @@
 <template>
-  <div id="app">
-  <h2>test分支修改</h2>
-  <h2>1231313</h2>
-  <h2>main修改</h2>
-  <h2>1121</h2>
+  <div id="app" class="">
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  color: #002;
-  margin-top: 60px;
-  margin: 100px;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.card{
+  box-shadow: -5px 5px 10px -4px #c5bbbb, 5px 5px 10px -4px #cdc1c1;
 }
 </style>
